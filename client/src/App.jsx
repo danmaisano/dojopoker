@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
 import './App.css';
-import Table from './components/table';
-import Login from './components/login';
-import Register from './components/register';
+import Table from './components/Table';
+import Login from './components/Login';
+import Register from './components/Register';
 import Cookies from "js-cookie";
 
 function App() {
