@@ -7,4 +7,5 @@ module.exports = (app) => {
   app.patch("/api/player/update/:id", PlayerController.updateChips);
   app.get("/api/players/getAllPlayers", PlayerController.getAllPlayers);
   app.delete("/api/players/delete/:id", PlayerController.deletePlayer);
+  app.get("/api/players/leaders", PlayerController.getLeaders);
 };

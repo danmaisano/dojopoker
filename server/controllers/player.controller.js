@@ -88,4 +88,18 @@ module.exports = {
         res.json({ message: "Something went wrong!", error: err })
       );
   },
+
+  getLeaders: (req, res) => {
+    Player.find()
+      .sort({ chips: -1 })
+      .limit(10)
+      .exec()
+      .then((leaders) => {
+        res.json(leaders);
+      })
+      .catch((error) => {
+        console.error(error);
+        res.status(500).json({ error: "Internal server error" });
+      });
+  },
 };

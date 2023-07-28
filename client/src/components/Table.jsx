@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import HandValue from './HandValues';
 import axios from "axios"
 import Cookies from 'js-cookie';
+import Leaderboard from './Leaderboard';
 import { useNavigate } from "react-router-dom"
 
 const Table = (props) => {
@@ -281,6 +282,7 @@ const Table = (props) => {
         </div>
       </div>
     )}
+    <Leaderboard/>
   </div>
 )};
 
